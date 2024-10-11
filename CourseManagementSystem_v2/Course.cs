@@ -8,9 +8,17 @@ namespace CourseManagementSystem_v2
 {
     internal class Course
     {
-        private string CourseId { get; set; }
-        private string Title { get; set; }
-        private string Duration { get; set; }
-        private decimal Price { get; set; }
+        public string CourseId { get; set; }
+        public string Title { get; set; }
+        public string Duration { get; set; }
+        public decimal Price { get; set; }
+
+        public Course(string courseId, string title, string duration, decimal price)
+        {
+            CourseId = courseId;
+            Title = title;
+            Duration = duration;
+            Price = price;
+        }
     }
 }
